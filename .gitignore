@@ -1,0 +1,18 @@
+#here to add files to gitignore
+
+/Users/administrator/Documents/Codrin/Code/EndOfAverage/.DS_Store
+*.csv
+
+.Rproj.user
+
+*.pdf
+
+*.DS_Store
+
+*.Rdata
+
+*/.DS_Store
+
+*.Rhistory
+.DS_Store
+Participant_Report/.DS_Store
