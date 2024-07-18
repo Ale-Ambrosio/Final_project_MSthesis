@@ -404,8 +404,8 @@ means_vector_high <- means_vector_high/100
 
 #Graphs for contemporaneous networks
 
-jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/Whole_sample/Contemporaneous_whole.jpg", 
-     width=1200, height=600, res=300, quality=100) 
+jpeg(here("Networks","Networks_output","Estimation","Whole_sample","Contemporaneous_whole.jpg", 
+     width=1200, height=600, res=300, quality=100)) 
 # Set up the plotting area 
 par(mfrow = c(1, 2))
 
@@ -432,8 +432,8 @@ dev.off()  # Closes the JPEG device
 
 #Graphs for temporal networks
 plot.new()
-jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/Whole_sample/Temporal_whole.jpg", 
-     width=1200, height=600, res=300, quality=100) 
+jpeg(here("Networks","Networks_output","Estimation","Whole_sample","Temporary_whole.jpg", 
+          width=1200, height=600, res=300, quality=100))
 par(mfrow = c(1, 2))
 
 qgraph(temp1,
@@ -460,8 +460,8 @@ dev.off()  # Closes the JPEG device
 
 #Graphs for between networks
 plot.new()
-jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/Whole_sample/Between_whole.jpg", 
-     width=1200, height=600, res=300, quality=100) 
+jpeg(here("Networks","Networks_output","Estimation","Whole_sample","Between_whole.jpg", 
+          width=1200, height=600, res=300, quality=100)) 
 par(mfrow = c(1, 2))
 
 qgraph(bet1,title = "Bet. Low EE", theme = "colorblind", labels = Vars, vsize = 13, asize = 5, mar = rep(6,4), layout = "circle", pie = means_vector_low)
@@ -569,8 +569,8 @@ means_vector_high <- means_vector_high/100
 
 #Graphs for contemporaneous networks
 
-jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/Extreme_groups/Contemporaneous_extremes.jpg", 
-     width=1200, height=600, res=300, quality=100) 
+jpeg(here("Networks","Networks_output","Estimation","Extreme_groups","Contemporaneous_extremes.jpg", 
+          width=1200, height=600, res=300, quality=100))
 # Set up the plotting area 
 par(mfrow = c(1, 2))
 
@@ -597,8 +597,8 @@ dev.off()  # Closes the JPEG device
 
 #Graphs for temporal networks
 plot.new()
-jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/Extreme_groups/Temporal_extremes.jpg", 
-     width=1200, height=600, res=300, quality=100) 
+jpeg(here("Networks","Networks_output","Estimation","Extreme_groups","Temporal_extremes.jpg", 
+          width=1200, height=600, res=300, quality=100)) 
 par(mfrow = c(1, 2))
 
 qgraph(temp1,
@@ -625,8 +625,8 @@ dev.off()  # Closes the JPEG device
 
 #Graphs for between networks
 plot.new()
-jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/Extreme_groups/Between_extremes.jpg", 
-     width=1200, height=600, res=300, quality=100) 
+jpeg(here("Networks","Networks_output","Estimation","Extreme_groups","Between_extremes.jpg", 
+          width=1200, height=600, res=300, quality=100))
 par(mfrow = c(1, 2))
 
 qgraph(bet1,title = "Bet. Low EE", theme = "colorblind", labels = Vars, vsize = 13, asize = 5, mar = rep(6,4), layout = "circle", pie = means_vector_low)
@@ -638,5 +638,5 @@ dev.off()  # Closes the JPEG device
 library(report)
 
 References = report(sessionInfo())
-ref_path = "C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/SessionReferences.txt"
+ref_path = here("Networks","Networks_output","Estimation","SessionReferences.txt")
 writeLines(References, con = ref_path)

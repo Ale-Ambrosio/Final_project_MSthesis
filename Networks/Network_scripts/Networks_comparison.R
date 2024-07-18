@@ -95,7 +95,7 @@ titles <- c("Low EE", "High EE",
             "Differences: Group Low - Group High",
             "Significant Differences")
 
-pdf("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Comparison/PDF/Temporal_comparison.pdf", width = 7, height = 7)
+pdf(here("Networks","Networks_output","Comparison","PDF","Temporal_comparison.pdf"), width = 7, height = 7)
 par(mfrow=c(2,2))
 for(i in 1:4) qgraph(t(l_nets1[[i]]), # needs transpose, because qgraph plots X[2,1] as 2->1
                      layout = "circle",
@@ -125,7 +125,7 @@ titles <- c("Low EE", "High EE",
             "Differences: Group Low - Group High",
             "Significant Differences")
 
-pdf("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Comparison/PDF/Contemporaneous_comparison.pdf", width = 7, height = 7)
+pdf(here("Networks","Networks_output","Comparison","PDF","Contemporaneous_comparison.pdf"), width = 7, height = 7)
 par(mfrow=c(2,2))
 for(i in 1:4) qgraph(t(l_nets2[[i]]), # needs transpose, because qgraph plots X[2,1] as 2->1
                      layout = "circle",
@@ -154,8 +154,7 @@ titles <- c("Low EE", "High EE",
             "Differences: Group Low - Group High",
             "Significant Differences")
 
-pdf("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Comparison/PDF/Between_comparison.pdf", width = 7, height = 7)
-par(mfrow=c(2,2))
+pdf(here("Networks","Networks_output","Comparison","PDF","Between_comparison.pdf"), width = 7, height = 7)
 for(i in 1:4) qgraph(t(l_nets3[[i]]), # needs transpose, because qgraph plots X[2,1] as 2->1
                      layout = "circle",
                      edge.labels = TRUE,
@@ -173,7 +172,7 @@ pvalues_temporal <- as.data.frame(pvalues_temporal)
 pvalues_temporal$Variable <- rownames(pvalues_temporal)
 pvalues_temporal <- pvalues_temporal[, c(ncol(pvalues_temporal), 1:(ncol(pvalues_temporal) - 1))]
 
-temp_comp_path <- file.path ("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Comparison/Matrices/Temporal_comparison.csv")
+temp_comp_path <- file.path (here("Networks","Networks_output","Comparison","Matrices","Temporal_comparison.csv"))
 write.csv(pvalues_temporal, temp_comp_path, row.names = FALSE)
 
 pvalues_contemporaneous <- mlVAR_comparison[["Pval"]][["Contemp_fixed"]]
@@ -181,7 +180,7 @@ pvalues_contemporaneous <- as.data.frame(pvalues_contemporaneous)
 pvalues_contemporaneous$Variable <- rownames(pvalues_contemporaneous)
 pvalues_contemporaneous <- pvalues_contemporaneous[, c(ncol(pvalues_contemporaneous), 1:(ncol(pvalues_contemporaneous) - 1))]
 
-cont_comp_path <- file.path ("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Comparison/Matrices/Contemporaneous_comparison.csv")
+cont_comp_path <- file.path (here("Networks","Networks_output","Comparison","Matrices","Contemporaneous_comparison.csv"))
 write.csv(pvalues_contemporaneous, cont_comp_path, row.names = FALSE)
 
 pvalues_between <- mlVAR_comparison[["Pval"]][["Between"]]
@@ -190,12 +189,12 @@ pvalues_between$Variable <- rownames(pvalues_between)
 pvalues_between <- pvalues_between[, c(ncol(pvalues_between), 1:(ncol(pvalues_between) - 1))]
 
 
-bet_comp_path <- file.path ("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Comparison/Matrices/Between_comparison.csv")
+bet_comp_path <- file.path (here("Networks","Networks_output","Comparison","Matrices","Between_comparison.csv"))
 write.csv(pvalues_between, bet_comp_path, row.names = FALSE)
 
 #Introducing all the references 
 library(report)
 
 References = report(sessionInfo())
-ref_path = "C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Comparison/SessionReferences.txt"
+ref_path = here("Networks","Networks_output","Comparison","SessionReferences.txt")
 writeLines(References, con = ref_path)
