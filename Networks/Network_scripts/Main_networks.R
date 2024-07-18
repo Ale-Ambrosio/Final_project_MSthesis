@@ -404,7 +404,7 @@ means_vector_high <- means_vector_high/100
 
 #Graphs for contemporaneous networks
 
-jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Whole_sample/Contemporaneous_whole.jpg", 
+jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/Whole_sample/Contemporaneous_whole.jpg", 
      width=1200, height=600, res=300, quality=100) 
 # Set up the plotting area 
 par(mfrow = c(1, 2))
@@ -432,7 +432,7 @@ dev.off()  # Closes the JPEG device
 
 #Graphs for temporal networks
 plot.new()
-jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Whole_sample/Temporal_whole.jpg", 
+jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/Whole_sample/Temporal_whole.jpg", 
      width=1200, height=600, res=300, quality=100) 
 par(mfrow = c(1, 2))
 
@@ -460,7 +460,7 @@ dev.off()  # Closes the JPEG device
 
 #Graphs for between networks
 plot.new()
-jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Whole_sample/Between_whole.jpg", 
+jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/Whole_sample/Between_whole.jpg", 
      width=1200, height=600, res=300, quality=100) 
 par(mfrow = c(1, 2))
 
@@ -569,7 +569,7 @@ means_vector_high <- means_vector_high/100
 
 #Graphs for contemporaneous networks
 
-jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Extreme_groups/Contemporaneous_extremes.jpg", 
+jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/Extreme_groups/Contemporaneous_extremes.jpg", 
      width=1200, height=600, res=300, quality=100) 
 # Set up the plotting area 
 par(mfrow = c(1, 2))
@@ -597,7 +597,7 @@ dev.off()  # Closes the JPEG device
 
 #Graphs for temporal networks
 plot.new()
-jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Extreme_groups/Temporal_extremes.jpg", 
+jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/Extreme_groups/Temporal_extremes.jpg", 
      width=1200, height=600, res=300, quality=100) 
 par(mfrow = c(1, 2))
 
@@ -625,7 +625,7 @@ dev.off()  # Closes the JPEG device
 
 #Graphs for between networks
 plot.new()
-jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Extreme_groups/Between_extremes.jpg", 
+jpeg("C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/Extreme_groups/Between_extremes.jpg", 
      width=1200, height=600, res=300, quality=100) 
 par(mfrow = c(1, 2))
 
@@ -638,5 +638,5 @@ dev.off()  # Closes the JPEG device
 library(report)
 
 References = report(sessionInfo())
-ref_path = "C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/SessionReferences.txt"
+ref_path = "C:/Users/ambro/Downloads/Network coding/Final_project_MSthesis/Networks/Networks_output/Estimation/SessionReferences.txt"
 writeLines(References, con = ref_path)
