@@ -155,6 +155,7 @@ titles <- c("Low EE", "High EE",
             "Significant Differences")
 
 pdf(here("Networks","Networks_output","Comparison","PDF","Between_comparison.pdf"), width = 7, height = 7)
+par(mfrow=c(2,2))
 for(i in 1:4) qgraph(t(l_nets3[[i]]), # needs transpose, because qgraph plots X[2,1] as 2->1
                      layout = "circle",
                      edge.labels = TRUE,
