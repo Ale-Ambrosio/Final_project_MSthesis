@@ -37,7 +37,7 @@
 ```diff
 Stop running here and check the format of the variables. 
 ["Freq_Stressed", "Freq_Sad", "Freq_Happy", "Freq_Bored"] need to be Scale formatted.
-You can modify it manually in the Variable view
+You can modify it manually in the Variable view.
 ``` 
 
 ## Graphics
