@@ -139,7 +139,7 @@ sum_per_subject <- sum_per_subject %>%
 
 #we save this data-frame, that we will use to perform analyses in SPSS
 # Define the file path
-file_path_1 <- here("Reports","Report_output", "Whole_sample", "For_ANOVA_frequency_whole.csv")
+file_path_1 <- here("Reports","Report_output", "Dataframes", "Whole_sample", "For_ANOVA_frequency_whole.csv")
 
 # Save the dataframe to the specified path
 write.csv(sum_per_subject, file_path_1, row.names = FALSE)
@@ -172,7 +172,7 @@ ave_intens_per_subject <- ave_intens_per_subject %>%
 
 #we save this data-frame, that we will use to perform analyses in SPSS
 # Define the file path
-file_path_2 <- here("Reports", "Report_output", "Whole_sample", "For_ANOVA_intensity_whole.csv")
+file_path_2 <- here("Reports", "Report_output", "Dataframes", "Whole_sample", "For_ANOVA_intensity_whole.csv")
 
 # Save the dataframe to the specified path
 write.csv(ave_intens_per_subject, file_path_2, row.names = FALSE)
@@ -256,7 +256,7 @@ sum_per_subject <- sum_per_subject %>%
 
 #we save this data-frame, that we will use to perform analyses in SPSS
 # Define the file path
-file_path_3 <- here("Reports","Report_output", "Extremes_groups", "For_ANOVA_frequency_extremes.csv")
+file_path_3 <- here("Reports","Report_output", "Dataframes", "Extremes_groups", "For_ANOVA_frequency_extremes.csv")
 
 # Save the dataframe to the specified path
 write.csv(sum_per_subject, file_path_3, row.names = FALSE)
@@ -289,7 +289,7 @@ ave_intens_per_subject <- ave_intens_per_subject %>%
 
 #we save this data-frame, that we will use to perform analyses in SPSS
 # Define the file path
-file_path_4 <- here("Reports", "Report_output", "Extremes_groups", "For_ANOVA_intensity_extremes.csv")
+file_path_4 <- here("Reports", "Report_output", "Dataframes", "Extremes_groups", "For_ANOVA_intensity_extremes.csv")
 
 # Save the dataframe to the specified path
 write.csv(ave_intens_per_subject, file_path_4, row.names = FALSE)
