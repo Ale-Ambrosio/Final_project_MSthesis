@@ -33,13 +33,21 @@
 
 ## SPSS analyses 
 1. The dataframes obtained from the previous step (```Data processing for ANOVAs```) can be processed running the syntax files that you find in the folder ```Reports\SPSS_syntax```.
-2. When you run the syntax, don't run everything at the beginning as there is one check to do after data import. In the syntax you will find this line (see below). Run the syntax until this point, perform the indicated check, and then you can run the rest of the syntax in one time. 
+2. When you open the SPSS syntax doc (```.sps```), make sure to properly modify the path for the data import. At line 7 you will find the following lines (see below). Adjust the portion of the path that is before ```Final_project_MSthesis``` according to the location where you placed the GitHub folder in your laptop.
+
+```diff
+/FILE="C:\Users\ambro\Downloads\Network "+
+    "coding\Final_project_MSthesis\Reports\Report_output\Dataframes\Extremes_groups\For_ANOVA_inten"+
+    "sity_extremes.csv"
+```
+
+3. When you run the syntax, don't run everything at the beginning as there is one check to do after data import. In the syntax you will find the following lines (see below). Run the syntax until this point, perform the indicated check, and then you can run the rest of the syntax in one time. 
 ```diff
 Stop running here and check the format of the variables. 
 ["Freq_Stressed", "Freq_Sad", "Freq_Happy", "Freq_Bored"] need to be Scale formatted.
 You can modify it manually in the Variable view.
 ```
-3. If you wish, you can save your output in a ```.pdf``` or ```.spv``` directly throught the SPSS Output window.
+4. If you wish, you can save your output in a ```.pdf``` or ```.spv``` directly throught the SPSS Output window.
 
 ## Graphics
 1. If you would like to produce the graphics regarding eating moments, emotions and EE groups, run the script ```Report_graphs.R```, which is placed in the folder ```Reports\Report_scripts```. Results will be stored in the folder ```Reports\Report_output\Graphs```. You should run this script only after having performed the previous step (```Data processing for ANOVAs```).
