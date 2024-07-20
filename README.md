@@ -5,6 +5,7 @@
 - [Networks Comparison](#Networks-comparison)
 - [Emotional eating scores calculation](#Emotional-eating-scores-and-groups)
 - [Obtaining the data frames for the ANOVA](#Data-processing-for-ANOVAs)
+- [Obtaining the graphs](#Graphics)
 
 ## Network estimation
 1. Download the GitHub folder ```Final_project_MSthesis``` on your laptop
@@ -30,4 +31,4 @@
 4. In the folder ```Reports\Report_output\Dataframes``` you will find the dataframes to read in SPSS.
 
 ## Graphics
-1. If you would like to produce the graphics regarding eating moments, emotions and EE groups, run the script ```Report_graphs.R```, which is placed in the folder ```Reports\Report_scripts```. Results will be stored in the folder ```Reports\Report_output\Graphs```. 
+1. If you would like to produce the graphics regarding eating moments, emotions and EE groups, run the script ```Report_graphs.R```, which is placed in the folder ```Reports\Report_scripts```. Results will be stored in the folder ```Reports\Report_output\Graphs```. You should run this script only after having performed the previous step (```Data processing for ANOVAs```).
