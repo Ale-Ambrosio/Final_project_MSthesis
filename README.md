@@ -5,6 +5,7 @@
 - [Networks Comparison](#Networks-comparison)
 - [Emotional eating scores calculation](#Emotional-eating-scores-and-groups)
 - [Obtaining the data frames for the ANOVA](#Data-processing-for-ANOVAs)
+- [SPSS analyses](#SPSS-analyses)
 - [Obtaining the graphs](#Graphics)
 
 ## Network estimation
@@ -29,7 +30,15 @@
 2. Open the file ```Final_project_MSthesis.Rproj```.
 3. Open the script ```Report_script.R``` which is placed in the folder ```Reports\Report_scripts```. Run it pressing on ```Source```.
 4. In the folder ```Reports\Report_output\Dataframes``` you will find the dataframes to read in SPSS.
-5. These dataframes can be processed running the syntax files that you find in the folder ```Reports\SPSS_syntax```.
+
+## SPSS analyses 
+1. The dataframes obtained from the previous step (```Data processing for ANOVAs```) can be processed running the syntax files that you find in the folder ```Reports\SPSS_syntax```.
+2. When you run the syntax, don't run everything at the beginning as there is one check to do after data import. In the syntax you will find this line (see below). RUn the syntax until this point, perform the indicated check, and then you can run the rest of the syntax in one time. 
+```diff
+Stop running here and check the format of the variables. 
+["Freq_Stressed", "Freq_Sad", "Freq_Happy", "Freq_Bored"] need to be Scale formatted.
+You can modify it manually in the Variable view
+``` 
 
 ## Graphics
 1. If you would like to produce the graphics regarding eating moments, emotions and EE groups, run the script ```Report_graphs.R```, which is placed in the folder ```Reports\Report_scripts```. Results will be stored in the folder ```Reports\Report_output\Graphs```. You should run this script only after having performed the previous step (```Data processing for ANOVAs```).
