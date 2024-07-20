@@ -38,7 +38,8 @@
 Stop running here and check the format of the variables. 
 ["Freq_Stressed", "Freq_Sad", "Freq_Happy", "Freq_Bored"] need to be Scale formatted.
 You can modify it manually in the Variable view.
-``` 
+```
+3. If you wish, you can save your output in a ```.pdf``` or ```.spv``` directly throught the SPSS Output window.
 
 ## Graphics
 1. If you would like to produce the graphics regarding eating moments, emotions and EE groups, run the script ```Report_graphs.R```, which is placed in the folder ```Reports\Report_scripts```. Results will be stored in the folder ```Reports\Report_output\Graphs```. You should run this script only after having performed the previous step (```Data processing for ANOVAs```).
