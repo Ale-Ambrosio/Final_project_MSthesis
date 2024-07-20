@@ -33,7 +33,7 @@
 
 ## SPSS analyses 
 1. The dataframes obtained from the previous step (```Data processing for ANOVAs```) can be processed running the syntax files that you find in the folder ```Reports\SPSS_syntax```.
-2. When you run the syntax, don't run everything at the beginning as there is one check to do after data import. In the syntax you will find this line (see below). RUn the syntax until this point, perform the indicated check, and then you can run the rest of the syntax in one time. 
+2. When you run the syntax, don't run everything at the beginning as there is one check to do after data import. In the syntax you will find this line (see below). Run the syntax until this point, perform the indicated check, and then you can run the rest of the syntax in one time. 
 ```diff
 Stop running here and check the format of the variables. 
 ["Freq_Stressed", "Freq_Sad", "Freq_Happy", "Freq_Bored"] need to be Scale formatted.
