@@ -1,0 +1,92 @@
+﻿* Encoding: UTF-8.
+
+PRESERVE.
+SET DECIMAL DOT.
+
+GET DATA  /TYPE=TXT
+  /FILE="C:\Users\ambro\Downloads\Network "+
+    "coding\Final_project_MSthesis\Reports\Report_output\Dataframes\Extremes_groups\For_ANOVA_inten"+
+    "sity_extremes.csv"
+  /ENCODING='UTF8'
+  /DELIMITERS=","
+  /QUALIFIER='"'
+  /ARRANGEMENT=DELIMITED
+  /FIRSTCASE=2
+  /DATATYPEMIN PERCENTAGE=95.0
+  /VARIABLES=
+  Participant.Label AUTO
+  Label AUTO
+  Int_Stressed AUTO
+  Int_Sad AUTO
+  Int_Happy AUTO
+  Int_Bored AUTO
+  Group AUTO
+  EE_score AUTO
+  /MAP.
+RESTORE.
+CACHE.
+EXECUTE.
+DATASET NAME DataSet1 WINDOW=FRONT.
+
+/*
+Stop running here and check the format of the variables. 
+["Int_Stressed", "Int_Sad", "Int_Happy", "Int_Bored"] need to be Scale formatted.
+You can modify it manually in the Variable view.
+*/
+    
+
+DATASET ACTIVATE DataSet1.
+UNIANOVA Int_Stressed BY Label Group
+  /METHOD=SSTYPE(3)
+  /INTERCEPT=INCLUDE
+  /POSTHOC=Label(LSD) 
+  /PLOT=PROFILE(Group*Label) TYPE=LINE ERRORBAR=NO MEANREFERENCE=NO YAXIS=AUTO
+  /EMMEANS=TABLES(OVERALL) 
+  /EMMEANS=TABLES(Label) 
+  /EMMEANS=TABLES(Group) 
+  /EMMEANS=TABLES(Label*Group) 
+  /PRINT DESCRIPTIVE HOMOGENEITY
+  /CRITERIA=ALPHA(.05)
+  /DESIGN=Label Group Label*Group.
+
+DATASET ACTIVATE DataSet1.
+UNIANOVA Int_Sad BY Label Group
+  /METHOD=SSTYPE(3)
+  /INTERCEPT=INCLUDE
+  /POSTHOC=Label(LSD) 
+  /PLOT=PROFILE(Group*Label) TYPE=LINE ERRORBAR=NO MEANREFERENCE=NO YAXIS=AUTO
+  /EMMEANS=TABLES(OVERALL) 
+  /EMMEANS=TABLES(Label) 
+  /EMMEANS=TABLES(Group) 
+  /EMMEANS=TABLES(Label*Group) 
+  /PRINT DESCRIPTIVE HOMOGENEITY
+  /CRITERIA=ALPHA(.05)
+  /DESIGN=Label Group Label*Group.
+
+DATASET ACTIVATE DataSet1.
+UNIANOVA Int_Happy BY Label Group
+  /METHOD=SSTYPE(3)
+  /INTERCEPT=INCLUDE
+  /POSTHOC=Label(LSD) 
+  /PLOT=PROFILE(Group*Label) TYPE=LINE ERRORBAR=NO MEANREFERENCE=NO YAXIS=AUTO
+  /EMMEANS=TABLES(OVERALL) 
+  /EMMEANS=TABLES(Label) 
+  /EMMEANS=TABLES(Group) 
+  /EMMEANS=TABLES(Label*Group) 
+  /PRINT DESCRIPTIVE HOMOGENEITY
+  /CRITERIA=ALPHA(.05)
+  /DESIGN=Label Group Label*Group.
+
+DATASET ACTIVATE DataSet1.
+UNIANOVA Int_Bored BY Label Group
+  /METHOD=SSTYPE(3)
+  /INTERCEPT=INCLUDE
+  /POSTHOC=Label(LSD) 
+  /PLOT=PROFILE(Group*Label) TYPE=LINE ERRORBAR=NO MEANREFERENCE=NO YAXIS=AUTO
+  /EMMEANS=TABLES(OVERALL) 
+  /EMMEANS=TABLES(Label) 
+  /EMMEANS=TABLES(Group) 
+  /EMMEANS=TABLES(Label*Group) 
+  /PRINT DESCRIPTIVE HOMOGENEITY
+  /CRITERIA=ALPHA(.05)
+  /DESIGN=Label Group Label*Group.
