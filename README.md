@@ -30,7 +30,7 @@
 
 
 ## Data processing for ANOVAs
-1.Perform this processing only after the previous step (```Emotional eating scores and groups```). 
+1. Perform this processing only after the previous step (```Emotional eating scores and groups```). 
 2. Download the lifestyle data from Avicenna using filters (for Participant Label) to obtain these chunks: a) EoA001-EoA025, b) EoA0026 - EoA049, c)EoA051 - EoA100, d)EoA101 - EoA129. Save them on your laptop respectively with these names: a) ```lifestyle_all_0-25.csv```, b) ```lifestyle_all_26-50.csv```, c) ```lifestyle_all_50-100.csv```, d) ```lifestyle_all_101-129.csv```. The files should be placed in the folder ```Reports\Report_data\Input_data```.
 3. Open the file ```Final_project_MSthesis.Rproj```.
 4. Open the script ```Report_script.R``` which is placed in the folder ```Reports\Report_scripts```. Run it pressing on ```Source```.
