@@ -41,7 +41,7 @@
     "sity_extremes.csv"
 ```
 
-3. When you run the syntax, don't run everything at the beginning as there is one check to do after data import. In the syntax you will find the following lines (see below). Run the syntax until this point, perform the indicated check, and then you can run the rest of the syntax in one time. 
+3. Don't run the whole syntax at the beginning as there is one check to do after data import. In the syntax you will find the following lines (see below). Run the syntax until this point, perform the indicated check, and then you can run the rest of the syntax in one time. 
 ```diff
 Stop running here and check the format of the variables. 
 ["Freq_Stressed", "Freq_Sad", "Freq_Happy", "Freq_Bored"] need to be Scale formatted.
