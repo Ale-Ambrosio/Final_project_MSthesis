@@ -1,12 +1,19 @@
 # Final_project_MSthesis
 
 ## Table of Contents
+- [Emotional eating scores calculation](#Emotional-eating-scores-and-groups)
 - [Network Estimation](#Network-estimation)
 - [Networks Comparison](#Networks-comparison)
-- [Emotional eating scores calculation](#Emotional-eating-scores-and-groups)
 - [Obtaining the data frames for the ANOVA](#Data-processing-for-ANOVAs)
 - [SPSS analyses](#SPSS-analyses)
 - [Obtaining the graphs](#Graphics)
+
+## Emotional eating scores and groups 
+1. Go to the Qualtrics questionnaire "EoA - Baseline Measures" and Export the data, selecting the option ```Use numerical values```. Move the file in the folder ```EE_calculation\Dataframes\Input_data``` and call it ```Baseline_measures```. A file called ```Qualtrics_ID``` should already be present in the same folder.
+2. Open the file ```Final_project_MSthesis.Rproj```.
+3. Open the script ```For_EE_dataset```, which is placed in the folder ```EE_calculation\Scripts```. Run it pressing on ```Source```.
+4. The output will be in the folders ```EE_calculation\Graphs``` (where you will find a boxplot and a density plot) and ```EE_calculation\Dataframes\Output_data``` (where you will find two ```.docx``` for the codes lists and two ```.csv``` for the two dataframes).
+
 
 ## Network estimation
 1. Download the GitHub folder ```Final_project_MSthesis``` on your laptop
@@ -25,12 +32,6 @@
 4. In the folder ```Networks\Network_output\Comparison``` you will find the PDFs and matrices of your comparisons and a document with all the references of the R session. Below there is an example of how the output should look like
 
 ![](Example_figures/comparison_example.jpg)
-
-## Emotional eating scores and groups
-1. Go to the Qualtrics questionnaire "EoA - Baseline Measures" and Export the data, selecting the option ```Use numerical values```. Move the file in the folder ```EE_calculation\Dataframes\Input_data``` and call it ```Baseline_measures```. A file called ```Qualtrics_ID``` should already be present in the same folder.
-2. Open the file ```Final_project_MSthesis.Rproj```.
-3. Open the script ```For_EE_dataset```, which is placed in the folder ```EE_calculation\Scripts```. Run it pressing on ```Source```.
-4. The output will be in the folders ```EE_calculation\Graphs``` (where you will find a boxplot and a density plot) and ```EE_calculation\Dataframes\Output_data``` (where you will find two ```.docx``` for the codes lists and two ```.csv``` for the two dataframes).
 
 
 ## Data processing for ANOVAs
