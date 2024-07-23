@@ -24,7 +24,7 @@
 3. Open the script ```Networks_comparison.R``` in the folder ```Networks\Network_scripts```. Run it using ```Source```.
 4. In the folder ```Networks\Network_output\Comparison``` you will find the PDFs and matrices of your comparisons and a document with all the references of the R session. Below there is an example of how the output should look like
 
-![](Example_figures/comparison_example.pdf)
+![](Example_figures/comparison_example.jpg)
 
 ## Emotional eating scores and groups
 1. Go to the Qualtrics questionnaire "EoA - Baseline Measures" and Export the data, selecting the option ```Use numerical values```. Mobe the file in the folder ```EE_calculation\Dataframes\Input_data``` and call it ```Baseline_measures```.
