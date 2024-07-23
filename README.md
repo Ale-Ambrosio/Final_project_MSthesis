@@ -16,7 +16,7 @@
 5. Open the script ```Main.networks.R``` which is placed in the folder ```Networks\Network_scripts```. Run it pressing on ```Source```.
 6. In the folder ```Networks\Network_output\Estimation``` you will find the pictures of your networks and a document with all the references of the R session. Below there is an example of how the networks should look like. 
 
-![](Example_figures/contemporaneous_reduced.jpg)
+![](Example_figures/contemporaneous_example.jpg)
 
 ## Networks comparison
 1. Run this script only after performing the previous step (```Network estimation```), and don't modify the output.
