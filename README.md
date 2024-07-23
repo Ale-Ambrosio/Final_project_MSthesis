@@ -27,7 +27,7 @@
 ![](Example_figures/comparison_example.jpg)
 
 ## Emotional eating scores and groups
-1. Go to the Qualtrics questionnaire "EoA - Baseline Measures" and Export the data, selecting the option ```Use numerical values```. Mobe the file in the folder ```EE_calculation\Dataframes\Input_data``` and call it ```Baseline_measures```.
+1. Go to the Qualtrics questionnaire "EoA - Baseline Measures" and Export the data, selecting the option ```Use numerical values```. Move the file in the folder ```EE_calculation\Dataframes\Input_data``` and call it ```Baseline_measures```. A file called ```Qualtrics_ID``` should already be present in the same folder.
 2. Open the file ```Final_project_MSthesis.Rproj```.
 3. Open the script ```For_EE_dataset```, which is placed in the folder ```EE_calculation\Scripts```. Run it pressing on ```Source```.
 4. The output will be in the folders ```EE_calculation\Graphs``` and ```EE_calculation\Dataframes\Output_data```. 
