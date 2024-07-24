@@ -1,7 +1,6 @@
 #here to add files to gitignore
 
 /Users/administrator/Documents/Codrin/Code/EndOfAverage/.DS_Store
-*.csv
 
 .Rproj.user
 
