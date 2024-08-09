@@ -4,8 +4,6 @@
 
 .Rproj.user
 
-*.pdf
-
 *.DS_Store
 
 *.Rdata
